@@ -1,0 +1,24 @@
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /test                     --> main.main.func1 (6 handlers)
+[GIN-debug] GET    /api/videos               --> main.main.func2 (6 handlers)
+[GIN-debug] POST   /api/videos               --> main.main.func3 (6 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8585
+%s - [%s] %s %s %d %s 
+::111 Oct 22 13:00 WIBPOST/api/videos200 4.469875ms[GIN] 2022/10/11 - 13:00:43 | 200 |    4.882125ms |             ::1 | POST     "/api/videos"
+%s - [%s] %s %s %d %s 
+::111 Oct 22 13:00 WIBPOST/api/videos200 105.917µs[GIN] 2022/10/11 - 13:00:49 | 200 |     322.292µs |             ::1 | POST     "/api/videos"
+%s - [%s] %s %s %d %s 
+::111 Oct 22 13:00 WIBPOST/api/videos400 1.147666ms[GIN] 2022/10/11 - 13:00:51 | 400 |    1.273208ms |             ::1 | POST     "/api/videos"
+%s - [%s] %s %s %d %s 
+::111 Oct 22 13:00 WIBPOST/api/videos200 111.75µs[GIN] 2022/10/11 - 13:00:56 | 200 |     226.292µs |             ::1 | POST     "/api/videos"
+%s - [%s] %s %s %d %s 
+::111 Oct 22 13:01 WIBPOST/api/videos400 113.459µs[GIN] 2022/10/11 - 13:01:01 | 400 |    1.092083ms |             ::1 | POST     "/api/videos"
+%s - [%s] %s %s %d %s 
+::111 Oct 22 13:01 WIBPOST/api/videos200 100.167µs[GIN] 2022/10/11 - 13:01:03 | 200 |     208.583µs |             ::1 | POST     "/api/videos"

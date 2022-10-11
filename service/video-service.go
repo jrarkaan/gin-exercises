@@ -2,7 +2,6 @@ package service
 
 import (
 	"github.com/jrarkaan/gin-exercises/entity"
-	"strings"
 )
 
 type VideoService interface {
@@ -24,11 +23,11 @@ func New() VideoService {
 }
 
 func (service *videoService) Save(video entity.Video) entity.Video {
-	for _, val := range service.videos {
-		if strings.ToLower(strings.ReplaceAll(val.Title, " ", "")) == strings.ToLower(strings.ReplaceAll(video.Title, " ", "")) {
-
-		}
-	}
+	//for _, val := range service.videos {
+	//	if strings.ToLower(strings.ReplaceAll(val.Title, " ", "")) == strings.ToLower(strings.ReplaceAll(video.Title, " ", "")) {
+	//
+	//	}
+	//}
 	service.videos = append(service.videos, video)
 	return video
 }
